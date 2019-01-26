@@ -9,7 +9,7 @@ $conexao = mysqli_connect(HOST, USUARIO, SENHA, DB) or die ('ERRO AO CONECTAR');
 session_start();
 
 if(empty($_POST['usuario']) || empty($_POST['senha'])){
-	header("Location: index.html?msg=1");
+	header("Location: index.php?msg=1");
 	exit();
 }
 
@@ -31,7 +31,7 @@ if(password_verify($senha, $senharesult)){
 	header("location: logado.php");
 
 }else{
-	header("location: index.html?msg=2");
+	header("location: index.php?msg=2");
 }
 
 

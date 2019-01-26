@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url(back.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+}
+.caixa{
+	position:absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 350px;
+	height: 420px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,.5);
+	padding: 80px 40px;
+}
+.usuario{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/2);
+	left: 36%;
+}
+h2{
+	margin: 0;
+	padding: 0, 0, 20px;
+	color: #00BFFF;
+	text-align: center;
+}
+.caixa p{
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+	color: #fff;
+}
+.caixa input{
+	width: 100%;
+	margin-bottom: 20px;
+}
+.caixa input[type="text"], .caixa input[type="password"]{
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	height: 40px;
+	font-size: 16px;
+}
+::placeholder{
+	color: rgba(255,255,255.8);
+}
+.caixa input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: #ff267e; 
+	cursor: pointer;
+	border-radius: 20px;
+}
+.caixa input[type="submit"]:hover{
+	background-color: yellow;
+	transition: 0.5s;
+	color:#262626;
+}
+
+.caixa button{
+	margin-left:35%;
+	border: none;
+	outline: none;
+	height: 40px;
+	color: #fff;
+	font-size: 16px;
+	background: #ff267e; 
+	cursor: pointer;
+	border-radius: 20px;
+}
+.caixa button a{
+	text-decoration: none;
+	color:white;
+}
+.caixa button:hover{
+	background-color: yellow;
+	transition: 0.5s;
+	color:#262626;
+}
+.caixa button:hover a{
+	transition: 0.5s;
+	color:black;
+}
+.erro{
+	background-color: red;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 5px 0px 5px 0px;
+	position: absolute;
+	margin-left: -18px;
+}
